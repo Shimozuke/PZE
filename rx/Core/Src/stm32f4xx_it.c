@@ -57,7 +57,7 @@
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim4;
 /* USER CODE BEGIN EV */
-
+extern volatile lightFlag;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -223,6 +223,8 @@ void TIM4_IRQHandler(void)
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
+  HAL_GPIO_WritePin(test_GPIO_Port, test_Pin, 0);
+  lightFlag = 0;
   /* USER CODE END TIM4_IRQn 1 */
 }
 

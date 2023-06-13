@@ -1273,7 +1273,7 @@ uint8_t nrf24l01p_write_tx_fifo(uint8_t* tx_payload)
  8000a4e:	f001 fd9b 	bl	8002588 <HAL_SPI_TransmitReceive>
     HAL_SPI_Transmit(NRF24L01P_SPI, tx_payload, NRF24L01P_PAYLOAD_LENGTH, 2000);
  8000a52:	f44f 63fa 	mov.w	r3, #2000	; 0x7d0
- 8000a56:	2201      	movs	r2, #1
+ 8000a56:	2202      	movs	r2, #2
  8000a58:	6879      	ldr	r1, [r7, #4]
  8000a5a:	4805      	ldr	r0, [pc, #20]	; (8000a70 <nrf24l01p_write_tx_fifo+0x44>)
  8000a5c:	f001 fb47 	bl	80020ee <HAL_SPI_Transmit>

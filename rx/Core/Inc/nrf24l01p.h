@@ -28,7 +28,7 @@
 #define NRF24L01P_IRQ_PIN_PORT            GPIOB
 #define NRF24L01P_IRQ_PIN_NUMBER          GPIO_PIN_2
 
-#define NRF24L01P_PAYLOAD_LENGTH          1     // 1 - 32bytes
+#define NRF24L01P_PAYLOAD_LENGTH          2     // 1 - 32bytes
 
 #define NRF24L01P_PIPE_ADDRESS_WIDTH 5 // 3, 4, 5
 

@@ -57,7 +57,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t tx_data[NRF24L01P_PAYLOAD_LENGTH] = {1};
+uint8_t tx_data[NRF24L01P_PAYLOAD_LENGTH] = {1, 0};
 uint8_t pipe_addr[NRF24L01P_PIPE_ADDRESS_WIDTH] = {0xA0, 0x2E, 0xA4, 0xB4, 0x6F};
 /* USER CODE END 0 */
 

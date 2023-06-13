@@ -3538,9 +3538,9 @@ LOAD c:/st/stm32cubeide_1.10.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000020000000                _sdata = .
  *(.data)
  *(.data*)
- .data.tx_data  0x0000000020000000        0x1 ./Core/Src/main.o
+ .data.tx_data  0x0000000020000000        0x2 ./Core/Src/main.o
                 0x0000000020000000                tx_data
- *fill*         0x0000000020000001        0x3 
+ *fill*         0x0000000020000002        0x2 
  .data.pipe_addr
                 0x0000000020000004        0x5 ./Core/Src/main.o
                 0x0000000020000004                pipe_addr
